@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>SONAR HOOTSUITE</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.2/underscore-min.js"></script>
+        <script src="https://d2l6uygi1pgnys.cloudfront.net/jsapi/2-0/hsp.js"></script>
+        
+        <script src="asset/template.js"></script>
+        <script src="asset/app.js"></script>
+        <link href="asset/sonarsuite.css" type="text/css" rel="stylesheet">
+        <meta http-equiv="refresh" content="3;url=welcome.html" />
+    </head>
+
+    <body>
+      <div class="hs_stream sonarstream">
+            <div class="hs_topBar">
+                <div class="hs_topBarContent">
+                    <ul class="hs_topBarControls">
+                        <li class="hs_topBarControlsBtn" title="My Account" onclick="location.href='account.html';">
+                            <a href="account.html"><span class="icon-app-dir x-user"></span></a>
+                        </li>
+                    </ul>
+                    <h1 class="hs_topBarTitle logo"><img src="asset/logo_small.png"></h1>
+                </div><!--Top Bar-->
+            </div><!--hs_topBar-->
+            <div class="ss_loader center">
+            	<div class="loader">
+                	<img src="asset/loader.gif">
+                </div>
+                <span>Please wait while we log you in</span>
+            </div><!--ss_loader-->
+            <div class="ss_footer">
+            	<a href="#">Learn more about Sonar</a>
+            </div>
+        </div><!--sonarstream-->
+    </body>
+</html>

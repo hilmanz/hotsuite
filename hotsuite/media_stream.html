@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>SONAR HOOTSUITE</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.2/underscore-min.js"></script>
+        <script src="https://d2l6uygi1pgnys.cloudfront.net/jsapi/2-0/hsp.js"></script>
+        
+        <script src="asset/template.js"></script>
+        <script src="asset/app.js"></script>
+        <script src="asset/magnific-popup/magnific-popup.js"></script>
+        <link href="asset/magnific-popup/magnific-popup.css" type="text/css" rel="stylesheet">
+        <link href="asset/sonarsuite.css" type="text/css" rel="stylesheet">
+    </head>
+
+    <body>
+      <div class="hs_stream sonarstream">
+            <div class="ss_topbar">
+                <ul class="hs_topBarControls">
+                        <li class="hs_topBarControlsBtn" title="My Account" onClick="location.href='account.html';">
+                            <i class="icon-person"></i>
+                        </li>
+                        <li class="hs_topBarControlsBtn" data-dropdown="Search" title="Search">
+                            <i class="icon-search"></i>
+                        </li>
+                        <li class="hs_topBarControlsBtn"  title="Settings" onClick="location.href='welcome.html';">
+                            <i class="icon-settings"></i>
+                        </li>
+                        <li class="hs_topBarControlsBtn" data-dropdown="MenuList" title="More">
+                            <i class="icon-more-vert"></i>
+                        </li>
+                </ul>
+            </div><!--ss_topbar-->
+            <div class="hs_topBar">
+                <div class="hs_topBarContent">
+                    <ul class="hs_topBarControls">
+                        <li class="hs_topBarControlsBtn" data-dropdown="Search" title="Search">
+                            <i class="icon-refresh2"></i>
+                        </li>
+                        <li class="hs_topBarControlsBtn" data-dropdown="Search" title="Search">
+                            <i class="icon-expand-more"></i>
+                        </li>
+                        <li class="hs_topBarControlsBtn" title="My Account">
+                            <i class="icon-close"></i>
+                        </li>
+                    </ul>
+                    <h1 class="hs_topBarTitle logo"><img src="asset/logo_small.png"> Media Stream</h1>
+                </div><!--hs_topBarContent-->
+                <div class="hs_topBarDropdown hs_dropdownSearch" data-dropdown="Search">
+                    <button class="hs_btnCtaSml hs_btnTypeSubmit _user_search">Search</button>
+                    <div class="hs_searchWrapper">
+                        <label class="hs_isVisuallyHidden" for="hs_searchInputExample">Search:</label>
+                        <input id="hs_searchInputExample" class="_user_text" type="text" placeholder="e.g. Hootsuite">
+                    </div>
+                </div><!--Search-->
+    
+                <ul class="hs_topBarDropdown hs_dropdownMenuList" data-dropdown="MenuList">
+                    <li class="hs_dropdownMenuListItem"><a href="#">Text Only</a></li>
+                    <li class="hs_dropdownMenuListItem"><a href="#">Text + Image</a></li>
+                    <li class="hs_dropdownMenuListItem"><a href="#">Clear Stream</a></li>
+                </ul><!--Menu List-->
+            </div><!--hs_topBar-->
+            <div class="hs_message">
+                <div class="ss_avatar">
+                    <img class="hs_avatarImage" src="asset/avatar.png" alt="Avatar">
+                    <a href="#" class="hs_avatarLink" title="Username"></a>
+                </div>
+                <div class="hs_content">
+                    <div class="ss_contentText">
+                        <a href="#popup-content" class="showPopup"> Donec sed odio dui. Aenean lacinia bibendum nulla sed consectetur purus sit amet fermentum.</a>
+                    </div><!--hs_contentText-->
+                    <a href="#" class="ss_userName" title="Username">Jakarta Post</a>
+                    <a href="#" class="ss_postTime" target="_blank" title="Sunday, September 14 2014 at 12:00pm via Hootsuite">1 minute ago</a>
+              </div><!--hs_content-->
+            </div><!--hs_message-->
+            <div class="hs_message">
+                <div class="ss_avatar">
+                    <img class="hs_avatarImage" src="asset/avatar.png" alt="Avatar">
+                    <a href="#" class="hs_avatarLink" title="Username"></a>
+                </div>
+                <div class="hs_content">
+                    <div class="ss_contentText">
+                        <a href="#popup-content" class="showPopup"> Donec sed odio dui. Aenean lacinia bibendum nulla sed consectetur purus sit amet fermentum.</a>
+                    </div><!--hs_contentText-->
+                    <a href="#" class="ss_userName" title="Username">Jakarta Post</a>
+                    <a href="#" class="ss_postTime" target="_blank" title="Sunday, September 14 2014 at 12:00pm via Hootsuite">1 minute ago</a>
+              </div><!--hs_content-->
+            </div><!--hs_message-->
+            <div class="hs_message">
+                <div class="ss_avatar">
+                    <img class="hs_avatarImage" src="asset/avatar.png" alt="Avatar">
+                    <a href="#" class="hs_avatarLink" title="Username"></a>
+                </div>
+                <div class="hs_content">
+                    <div class="ss_contentText">
+                        <a href="#popup-content" class="showPopup"> Donec sed odio dui. Aenean lacinia bibendum nulla sed consectetur purus sit amet fermentum.</a>
+                    </div><!--hs_contentText-->
+                    <a href="#" class="ss_userName" title="Username">Jakarta Post</a>
+                    <a href="#" class="ss_postTime" target="_blank" title="Sunday, September 14 2014 at 12:00pm via Hootsuite">1 minute ago</a>
+              </div><!--hs_content-->
+            </div><!--hs_message-->
+            <div class="hs_message">
+                <div class="ss_avatar">
+                    <img class="hs_avatarImage" src="asset/avatar.png" alt="Avatar">
+                    <a href="#" class="hs_avatarLink" title="Username"></a>
+                </div>
+                <div class="hs_content">
+                    <div class="ss_contentText">
+                        <a href="#popup-content" class="showPopup"> Donec sed odio dui. Aenean lacinia bibendum nulla sed consectetur purus sit amet fermentum.</a>
+                    </div><!--hs_contentText-->
+                    <a href="#" class="ss_userName" title="Username">Jakarta Post</a>
+                    <a href="#" class="ss_postTime" target="_blank" title="Sunday, September 14 2014 at 12:00pm via Hootsuite">1 minute ago</a>
+              </div><!--hs_content-->
+            </div><!--hs_message-->
+            <div class="hs_message">
+                <div class="ss_avatar">
+                    <img class="hs_avatarImage" src="asset/avatar.png" alt="Avatar">
+                    <a href="#" class="hs_avatarLink" title="Username"></a>
+                </div>
+                <div class="hs_content">
+                    <div class="ss_contentText">
+                        <a href="#popup-content" class="showPopup"> Donec sed odio dui. Aenean lacinia bibendum nulla sed consectetur purus sit amet fermentum.</a>
+                    </div><!--hs_contentText-->
+                    <a href="#" class="ss_userName" title="Username">Jakarta Post</a>
+                    <a href="#" class="ss_postTime" target="_blank" title="Sunday, September 14 2014 at 12:00pm via Hootsuite">1 minute ago</a>
+              </div><!--hs_content-->
+            </div><!--hs_message-->
+            <div class="hs_message">
+                <div class="ss_avatar">
+                    <img class="hs_avatarImage" src="asset/avatar.png" alt="Avatar">
+                    <a href="#" class="hs_avatarLink" title="Username"></a>
+                </div>
+                <div class="hs_content">
+                    <div class="ss_contentText">
+                        <a href="#popup-content" class="showPopup"> Donec sed odio dui. Aenean lacinia bibendum nulla sed consectetur purus sit amet fermentum.</a>
+                    </div><!--hs_contentText-->
+                    <a href="#" class="ss_userName" title="Username">Jakarta Post</a>
+                    <a href="#" class="ss_postTime" target="_blank" title="Sunday, September 14 2014 at 12:00pm via Hootsuite">1 minute ago</a>
+              </div><!--hs_content-->
+            </div><!--hs_message-->
+            <div class="hs_message">
+                <div class="ss_avatar">
+                    <img class="hs_avatarImage" src="asset/avatar.png" alt="Avatar">
+                    <a href="#" class="hs_avatarLink" title="Username"></a>
+                </div>
+                <div class="hs_content">
+                    <div class="ss_contentText">
+                        <a href="#popup-content" class="showPopup"> Donec sed odio dui. Aenean lacinia bibendum nulla sed consectetur purus sit amet fermentum.</a>
+                    </div><!--hs_contentText-->
+                    <a href="#" class="ss_userName" title="Username">Jakarta Post</a>
+                    <a href="#" class="ss_postTime" target="_blank" title="Sunday, September 14 2014 at 12:00pm via Hootsuite">1 minute ago</a>
+              </div><!--hs_content-->
+            </div><!--hs_message-->
+        </div><!--sonarstream-->
+        <div id="popup-content" class="white-popup  mfp-hide">
+        	<div class="popup-content">
+            	<h2>Donec sed odio dui. Aenean lacinia bibendum nulla sed consectetur purus sit amet fermentum</h2>
+                <a href="#" class="ss_userName" title="Username">Jakarta Post</a>
+                <a href="#" class="ss_postTime" target="_blank" title="Sunday, September 14 2014 at 12:00pm via Hootsuite">1 minute ago</a>
+                <div class="entry-popup">
+                    <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla. Maecenas sed diam eget risus varius blandit sit amet non magna. Donec id elit non mi porta gravida at eget metus. Vestibulum id ligula porta felis euismod semper.</p>
+    
+    <p>Donec id elit non mi porta gravida at eget metus. Donec ullamcorper nulla non metus auctor fringilla. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Maecenas faucibus mollis interdum. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
+    
+    <p>Sed posuere consectetur est at lobortis. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vestibulum id ligula porta felis euismod semper. Aenean lacinia bibendum nulla sed consectetur.</p>
+				</div>
+                <div class="ss_row_btn center">
+                    <a href="#" class="button btn_full" target="_blank">View Original Post</a>
+                </div><!--ss_row-->
+            </div>
+        </div>
+    </body>
+</html>

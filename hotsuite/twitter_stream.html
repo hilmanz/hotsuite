@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>SONAR HOOTSUITE</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.2/underscore-min.js"></script>
+        <script src="https://d2l6uygi1pgnys.cloudfront.net/jsapi/2-0/hsp.js"></script>
+        
+        <script src="asset/template.js"></script>
+        <script src="asset/app.js"></script>
+        <link href="asset/sonarsuite.css" type="text/css" rel="stylesheet">
+    </head>
+
+    <body>
+      <div class="hs_stream sonarstream">
+            <div class="ss_topbar">
+                <ul class="hs_topBarControls">
+                        <li class="hs_topBarControlsBtn" title="My Account" onClick="location.href='account.html';">
+                            <i class="icon-person"></i>
+                        </li>
+                        <li class="hs_topBarControlsBtn" data-dropdown="Search" title="Search">
+                            <i class="icon-search"></i>
+                        </li>
+                        <li class="hs_topBarControlsBtn"  title="Settings" onClick="location.href='welcome.html';">
+                            <i class="icon-settings"></i>
+                        </li>
+                        <li class="hs_topBarControlsBtn" data-dropdown="MenuList" title="More">
+                            <i class="icon-more-vert"></i>
+                        </li>
+                </ul>
+            </div><!--ss_topbar-->
+            <div class="hs_topBar">
+                <div class="hs_topBarContent">
+                    <ul class="hs_topBarControls">
+                        <li class="hs_topBarControlsBtn" data-dropdown="Search" title="Search">
+                            <i class="icon-refresh2"></i>
+                        </li>
+                        <li class="hs_topBarControlsBtn" data-dropdown="Search" title="Search">
+                            <i class="icon-expand-more"></i>
+                        </li>
+                        <li class="hs_topBarControlsBtn" title="My Account">
+                            <i class="icon-close"></i>
+                        </li>
+                    </ul>
+                    <h1 class="hs_topBarTitle logo"><img src="asset/logo_small.png"> Media</h1>
+                </div><!--hs_topBarContent-->
+                <div class="hs_topBarDropdown hs_dropdownSearch" data-dropdown="Search">
+                    <button class="hs_btnCtaSml hs_btnTypeSubmit _user_search">Search</button>
+                    <div class="hs_searchWrapper">
+                        <label class="hs_isVisuallyHidden" for="hs_searchInputExample">Search:</label>
+                        <input id="hs_searchInputExample" class="_user_text" type="text" placeholder="e.g. Hootsuite">
+                    </div>
+                </div><!--Search-->
+    
+                <ul class="hs_topBarDropdown hs_dropdownMenuList" data-dropdown="MenuList">
+                    <li class="hs_dropdownMenuListItem"><a href="#">Text Only</a></li>
+                    <li class="hs_dropdownMenuListItem"><a href="#">Text + Image</a></li>
+                    <li class="hs_dropdownMenuListItem"><a href="#">Clear Stream</a></li>
+                </ul><!--Menu List-->
+            </div><!--hs_topBar-->
+            <div class="hs_message">
+                <div class="hs_avatar">
+                    <img class="hs_avatarImage" src="asset/avatar.png" alt="Avatar">
+                    <a href="#" class="hs_avatarLink" title="Username"></a>
+                </div>
+                <div class="hs_content">
+                    <a href="#" class="hs_userName" title="Username">Hootsuite <span class="userid">@hootsuiteID</span></a>
+                    <a href="#" class="hs_postTime" target="_blank" title="Sunday, September 14 2014 at 12:00pm via Hootsuite">1 minute ago</a>
+    
+                    <div class="hs_contentText">
+                        <p>
+                            Let's start by telling the Dashboard to do some stuff for us:<br />
+                            <a href="#" class='_retweet'>reweet</a>&nbsp;&nbsp;
+                            <a href="#" class='_showStatusMessage'>showStatusMessage</a>&nbsp;&nbsp;
+                            <a href="#" class='_clearStatusMessage'>clearStatusMessage</a>&nbsp;&nbsp;
+                            <a href="#" class='_showFollowDialog'>showFollowDialog</a>&nbsp;&nbsp;
+                            <a href="#" class='_customUserInfo'>customUserInfo</a>&nbsp;&nbsp;
+                            <a href="#" class='_showImagePreview'>showImagePreview</a>&nbsp;&nbsp;
+                            <a href="#" class='_updatePlacementSubtitle'>updatePlacementSubtitle</a>&nbsp;&nbsp;
+                            <a href="#" class='_showCustomPopup'>showCustomPopup</a>&nbsp;&nbsp;
+                            <br />
+                            <!--Optional Image-->
+                            <div class="hs_mediaGallery">
+                                <a class="hs_attachedMedia" href="#">
+                                    <!--Single images are cropped to a 16:9 ratio-->
+                                    <img src="asset/holiday-owl.jpg" alt="Sample Image" class="hs_isProcessed _showImagePreview">
+                                </a>
+                            </div>
+                            <br />
+                            Click <a href="https://hootsuite.s3.amazonaws.com/jsapi/1-0/app_stream_template.html" target="_blank">this link</a> to explore more about our free CSS theme for apps
+                        </p>
+                    </div><!--hs_contentText-->
+                    <ul class="hs_metrics">
+                      <li class="hs_metricsItem"><a href="#">4 Interactions</a></li>
+                      <li class="hs_metricsItem"><a href="#">3K Viral Reach</a></li>
+                      <li class="hs_metricsItem"><a href="#">94M Potential Reach</a></li>
+                    </ul>
+              </div><!--hs_content-->
+            </div><!--hs_message-->
+            <div class="hs_message">
+                <div class="hs_avatar">
+                    <img class="hs_avatarImage" src="asset/avatar.png" alt="Avatar">
+                    <a href="#" class="hs_avatarLink" title="Username"></a>
+                </div>
+                <div class="hs_content">
+                    <a href="#" class="hs_userName" title="Username">Hootsuite <span class="userid">@hootsuiteID</span></a>
+                    <a href="#" class="hs_postTime" target="_blank" title="Sunday, September 14 2014 at 12:00pm via Hootsuite">3 minute ago</a>
+    
+                    <div class="hs_contentText">
+                        <p>
+                            Let's start by telling the Dashboard to do some stuff for us:<br />
+                            Click <a href="https://hootsuite.s3.amazonaws.com/jsapi/1-0/app_stream_template.html" target="_blank">this link</a> to explore more about our free CSS theme for apps
+                        </p>
+                    </div><!--hs_contentText-->
+                    <ul class="hs_metrics">
+                      <li class="hs_metricsItem"><a href="#">4 Interactions</a></li>
+                      <li class="hs_metricsItem"><a href="#">3K Viral Reach</a></li>
+                      <li class="hs_metricsItem"><a href="#">94M Potential Reach</a></li>
+                    </ul>
+              </div><!--hs_content-->
+            </div><!--hs_message-->
+            <div class="hs_message">
+                <div class="hs_avatar">
+                    <img class="hs_avatarImage" src="asset/avatar.png" alt="Avatar">
+                    <a href="#" class="hs_avatarLink" title="Username"></a>
+                </div>
+                <div class="hs_content">
+                    <a href="#" class="hs_userName" title="Username">Hootsuite <span class="userid">@hootsuiteID</span></a>
+                    <a href="#" class="hs_postTime" target="_blank" title="Sunday, September 14 2014 at 12:00pm via Hootsuite">4 minute ago</a>
+    
+                    <div class="hs_contentText">
+                        <p>
+                           Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
+                        </p>
+                    </div><!--hs_contentText-->
+                    <ul class="hs_metrics">
+                      <li class="hs_metricsItem"><a href="#">4 Interactions</a></li>
+                      <li class="hs_metricsItem"><a href="#">3K Viral Reach</a></li>
+                      <li class="hs_metricsItem"><a href="#">94M Potential Reach</a></li>
+                    </ul>
+              </div><!--hs_content-->
+            </div><!--hs_message-->
+            <div class="hs_message">
+                <div class="hs_avatar">
+                    <img class="hs_avatarImage" src="asset/avatar.png" alt="Avatar">
+                    <a href="#" class="hs_avatarLink" title="Username"></a>
+                </div>
+                <div class="hs_content">
+                    <a href="#" class="hs_userName" title="Username">Hootsuite <span class="userid">@hootsuiteID</span></a>
+                    <a href="#" class="hs_postTime" target="_blank" title="Sunday, September 14 2014 at 12:00pm via Hootsuite">5 minute ago</a>
+    
+                    <div class="hs_contentText">
+                        <p>
+                           Cras mattis consectetur purus sit amet fermentum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur blandit tempus porttitor. 
+                        </p>
+                    </div><!--hs_contentText-->
+                    <ul class="hs_metrics">
+                      <li class="hs_metricsItem"><a href="#">4 Interactions</a></li>
+                      <li class="hs_metricsItem"><a href="#">3K Viral Reach</a></li>
+                      <li class="hs_metricsItem"><a href="#">94M Potential Reach</a></li>
+                    </ul>
+              </div><!--hs_content-->
+            </div><!--hs_message-->
+        </div><!--sonarstream-->
+    </body>
+</html>

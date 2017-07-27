@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>SONAR HOOTSUITE</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.2/underscore-min.js"></script>
+        <script src="https://d2l6uygi1pgnys.cloudfront.net/jsapi/2-0/hsp.js"></script>
+        
+        <script src="asset/template.js"></script>
+        <script src="asset/app.js"></script>
+        <script src="asset/magnific-popup/magnific-popup.js"></script>
+        <link href="asset/magnific-popup/magnific-popup.css" type="text/css" rel="stylesheet">
+        <link href="asset/sonarsuite.css" type="text/css" rel="stylesheet">
+        
+        <!-- highchart -->
+		<script src="asset/js/highcharts.js"></script>
+        <script src="asset/js/modules/exporting.js"></script>
+        
+		<script type="text/javascript">
+				$(function () {
+					$('#line-chart').highcharts({
+						colors: ['#0d233a', '#2f7ed8', '#8bbc21'],
+						chart: {
+							type: 'line'
+						},
+						title: {
+							text: ''
+						},
+						exporting: {
+						 enabled: false
+						},
+						credits: {
+							enabled: false
+						},
+						xAxis: {
+							categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+						},
+						yAxis: {
+							title: {
+								text: ''
+							}
+						},
+						plotOptions: {
+							line: {
+								dataLabels: {
+									enabled: true
+								},
+								enableMouseTracking: false
+							}
+						},
+						series: [{
+							name: 'Brand1',
+							data: [7.0, 6.9, 9.5, 14.5, 18.4, 21.5, 25.2, 26.5, 23.3, 18.3, 13.9, 9.6]
+						}, {
+							name: 'Brand2',
+							data: [3.9, 4.2, 5.7, 8.5, 11.9, 15.2, 17.0, 16.6, 14.2, 10.3, 6.6, 4.8]
+						}, {
+							name: 'Brand3',
+							data: [ 15.2, 17.0, 16.6, 14.2, 10.3, 6.6, 4.8, 3.9, 4.2, 5.7, 8.5, 11.9]
+						}]
+					});
+				});
+				// CHART 2
+				$(function () {
+					$('#posts-chart').highcharts({
+						colors: ['#0d233a', '#2f7ed8', '#8bbc21'],
+						chart: {
+							plotBackgroundColor: null,
+							plotBorderWidth: null,
+							plotShadow: false,
+							type: 'pie'
+						},
+						title: {
+							text: ''
+						},
+						exporting: {
+						 enabled: false
+						},
+						credits: {
+							enabled: false
+						},
+						tooltip: {
+							pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+						},
+						plotOptions: {
+							pie: {
+								allowPointSelect: true,
+								cursor: 'pointer',
+								dataLabels: {
+									enabled: false
+								},
+								showInLegend: true
+							}
+						},
+						series: [{
+							name: "Brands",
+							colorByPoint: true,
+							data: [{
+								name: "Brand1",
+								y: 56.33
+							}, {
+								name: "Brand2",
+								y: 24.030000000000005,
+								sliced: true,
+								selected: true
+							}, {
+								name: "Brand3",
+								y: 10.38
+							}]
+						}]
+					});
+				});
+				// COMMENTS CHART
+				$(function () {
+					$('#comment-chart').highcharts({
+						colors: ['#0d233a', '#2f7ed8', '#8bbc21'],
+						chart: {
+							plotBackgroundColor: null,
+							plotBorderWidth: null,
+							plotShadow: false,
+							type: 'pie'
+						},
+						title: {
+							text: ''
+						},
+						exporting: {
+						 enabled: false
+						},
+						credits: {
+							enabled: false
+						},
+						tooltip: {
+							pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+						},
+						plotOptions: {
+							pie: {
+								allowPointSelect: true,
+								cursor: 'pointer',
+								dataLabels: {
+									enabled: false
+								},
+								showInLegend: true
+							}
+						},
+						series: [{
+							name: "Brands",
+							colorByPoint: true,
+							data: [{
+								name: "Brand1",
+								y: 31
+							}, {
+								name: "Brand2",
+								y: 44,
+								sliced: true,
+								selected: true
+							}, {
+								name: "Brand3",
+								y: 21
+							}]
+						}]
+					});
+				});
+				// LIKE CHART
+				$(function () {
+					$('#like-chart').highcharts({
+						colors: ['#0d233a', '#2f7ed8', '#8bbc21'],
+						chart: {
+							plotBackgroundColor: null,
+							plotBorderWidth: null,
+							plotShadow: false,
+							type: 'pie'
+						},
+						title: {
+							text: ''
+						},
+						exporting: {
+						 enabled: false
+						},
+						credits: {
+							enabled: false
+						},
+						tooltip: {
+							pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+						},
+						plotOptions: {
+							pie: {
+								allowPointSelect: true,
+								cursor: 'pointer',
+								dataLabels: {
+									enabled: false
+								},
+								showInLegend: true
+							}
+						},
+						series: [{
+							name: "Brands",
+							colorByPoint: true,
+							data: [{
+								name: "Brand1",
+								y: 31
+							}, {
+								name: "Brand2",
+								y: 44,
+								sliced: true,
+								selected: true
+							}, {
+								name: "Brand3",
+								y: 21
+							}]
+						}]
+					});
+				});
+				// SHARE CHART
+				$(function () {
+					$('#share-chart').highcharts({
+						colors: ['#0d233a', '#2f7ed8', '#8bbc21'],
+						chart: {
+							plotBackgroundColor: null,
+							plotBorderWidth: null,
+							plotShadow: false,
+							type: 'pie'
+						},
+						title: {
+							text: ''
+						},
+						exporting: {
+						 enabled: false
+						},
+						credits: {
+							enabled: false
+						},
+						tooltip: {
+							pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+						},
+						plotOptions: {
+							pie: {
+								allowPointSelect: true,
+								cursor: 'pointer',
+								dataLabels: {
+									enabled: false
+								},
+								showInLegend: true
+							}
+						},
+						series: [{
+							name: "Brands",
+							colorByPoint: true,
+							data: [{
+								name: "Brand1",
+								y: 31
+							}, {
+								name: "Brand2",
+								y: 44,
+								sliced: true,
+								selected: true
+							}, {
+								name: "Brand3",
+								y: 21
+							}]
+						}]
+					});
+				});
+								
+				// SENTIMENT CHART
+				$(function () {
+					$('#sentiment-chart').highcharts({
+						colors: ['#999999', '#64bf0a', '#e12626'],
+						chart: {
+							type: 'column'
+						},
+						title: {
+							text: ''
+						},
+						exporting: {
+						 enabled: false
+						},
+						credits: {
+							enabled: false
+						},
+						xAxis: {
+							categories: ['Brand1', 'Brand2', 'Brand3']
+						},
+						yAxis: {
+							min: 0,
+							title: {
+								text: ''
+							},
+							stackLabels: {
+								enabled: true,
+								style: {
+									fontWeight: 'bold',
+									color: (Highcharts.theme && Highcharts.theme.textColor) || 'gray'
+								}
+							}
+						},
+						legend: {
+							align: 'right',
+							x: -30,
+							verticalAlign: 'top',
+							y: 25,
+							floating: true,
+							backgroundColor: (Highcharts.theme && Highcharts.theme.background2) || 'white',
+							borderColor: '#CCC',
+							borderWidth: 1,
+							shadow: false
+						},
+						tooltip: {
+							formatter: function () {
+								return '<b>' + this.x + '</b><br/>' +
+									this.series.name + ': ' + this.y + '<br/>' +
+									'Total: ' + this.point.stackTotal;
+							}
+						},
+						plotOptions: {
+							column: {
+								stacking: 'normal',
+								dataLabels: {
+									enabled: true,
+									color: (Highcharts.theme && Highcharts.theme.dataLabelsColor) || 'white',
+									style: {
+										textShadow: '0 0 3px black'
+									}
+								}
+							}
+						},
+						series: [{
+							name: 'Positive',
+							data: [5, 3, 4]
+						}, {
+							name: 'Negative',
+							data: [2, 2, 3]
+						}, {
+							name: 'Neutral',
+							data: [3, 4, 4]
+						}]
+					});
+				});
+		</script>
+    </head>
+
+    <body>
+      <div class="hs_stream sonarstream">
+            <div class="ss_topbar">
+                <ul class="hs_topBarControls">
+                        <li class="hs_topBarControlsBtn" title="My Account" onClick="location.href='account.html';">
+                            <i class="icon-person"></i>
+                        </li>
+                        <li class="hs_topBarControlsBtn" data-dropdown="Search" title="Search">
+                            <i class="icon-search"></i>
+                        </li>
+                        <li class="hs_topBarControlsBtn"  title="Settings" onClick="location.href='welcome.html';">
+                            <i class="icon-settings"></i>
+                        </li>
+                        <li class="hs_topBarControlsBtn" data-dropdown="MenuList" title="More">
+                            <i class="icon-more-vert"></i>
+                        </li>
+                </ul>
+            </div><!--ss_topbar-->
+            <div class="hs_topBar">
+                <div class="hs_topBarContent">
+                    <ul class="hs_topBarControls">
+                        <li class="hs_topBarControlsBtn" data-dropdown="Search" title="Search">
+                            <i class="icon-refresh2"></i>
+                        </li>
+                        <li class="hs_topBarControlsBtn" data-dropdown="Search" title="Search">
+                            <i class="icon-expand-more"></i>
+                        </li>
+                        <li class="hs_topBarControlsBtn" title="My Account">
+                            <i class="icon-close"></i>
+                        </li>
+                    </ul>
+                    <h1 class="hs_topBarTitle logo"><img src="asset/logo_small.png">Facebook Analytics</h1>
+                </div><!--hs_topBarContent-->
+                <div class="hs_topBarDropdown hs_dropdownSearch" data-dropdown="Search">
+                    <button class="hs_btnCtaSml hs_btnTypeSubmit _user_search">Search</button>
+                    <div class="hs_searchWrapper">
+                        <label class="hs_isVisuallyHidden" for="hs_searchInputExample">Search:</label>
+                        <input id="hs_searchInputExample" class="_user_text" type="text" placeholder="e.g. Hootsuite">
+                    </div>
+                </div><!--Search-->
+    
+                <ul class="hs_topBarDropdown hs_dropdownMenuList" data-dropdown="MenuList">
+                    <li class="hs_dropdownMenuListItem"><a href="#">Text Only</a></li>
+                    <li class="hs_dropdownMenuListItem"><a href="#">Text + Image</a></li>
+                    <li class="hs_dropdownMenuListItem"><a href="#">Clear Stream</a></li>
+                </ul><!--Menu List-->
+            </div><!--hs_topBar-->
+            <div class="ss_chart">
+            	<div class="chartbox">
+                	<h3 class="chart-title">Facebook Activity</h3>
+                    <div id="line-chart" class="linechart" style="min-width: 310px; height: 240px;"></div>
+                </div>
+            	<div class="chartbox">
+                	<h3 class="chart-title">Comments</h3>
+					<div id="comment-chart" class="piechart" style="min-width: 310px; height: 240px; max-width: 600px;"></div>
+                </div>
+            	<div class="chartbox">
+                	<h3 class="chart-title">Post</h3>
+					<div id="posts-chart" class="piechart" style="min-width: 310px; height: 240px; max-width: 600px;"></div>
+                </div>
+            	<div class="chartbox">
+                	<h3 class="chart-title">Like</h3>
+					<div id="like-chart" class="piechart" style="min-width: 310px; height: 240px; max-width: 600px;"></div>
+                </div>
+            	<div class="chartbox">
+                	<h3 class="chart-title">Share</h3>
+					<div id="share-chart" class="piechart" style="min-width: 310px; height: 240px; max-width: 600px;"></div>
+                </div>
+            	<div class="chartbox">
+                	<h3 class="chart-title">Thread Volume & Sentiment</h3>
+					<div id="sentiment-chart" class="piechart" style="min-width: 310px; height: 240px; max-width: 600px;"></div>
+                </div>
+            </div><!--hs_message-->
+        </div><!--sonarstream-->
+    </body>
+</html>

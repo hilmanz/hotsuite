@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>SONAR HOOTSUITE</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.2/underscore-min.js"></script>
+        <script src="https://d2l6uygi1pgnys.cloudfront.net/jsapi/2-0/hsp.js"></script>
+        
+        <script src="asset/template.js"></script>
+        <script src="asset/app.js"></script>
+        <link href="asset/sonarsuite.css" type="text/css" rel="stylesheet">
+        <meta http-equiv="refresh" content="3;url=twitter_stream.html" />
+    </head>
+
+    <body>
+      <div class="hs_stream sonarstream">
+            <div class="hs_topBar">
+                <div class="hs_topBarContent">
+                    <ul class="hs_topBarControls">
+                        <li class="hs_topBarControlsBtn" data-dropdown="WriteMessage" title="Write Message">
+                            <span class="icon-app-dir x-compose"></span>
+                        </li>
+                        <li class="hs_topBarControlsBtn" data-dropdown="Search" title="Search">
+                            <span class="icon-app-dir x-search"></span>
+                        </li>
+                        <li class="hs_topBarControlsBtn" data-dropdown="Settings" title="Settings">
+                            <span class="icon-app-dir x-settings"></span>
+                        </li>
+                        <li class="hs_topBarControlsBtn" data-dropdown="MenuList" title="More">
+                            <span class="icon-app-dir x-ellipsis"></span>
+                        </li>
+                    </ul>
+                    <h1 class="hs_topBarTitle logo"><img src="asset/logo_small.png"></h1>
+                </div><!--Top Bar-->
+                <div class="hs_topBarDropdown hs_dropdownWriteMessage" data-dropdown="WriteMessage" style="display: none;">
+                    <button class="hs_btnCtaSml hs_btnTypeSubmit _message_send">Send</button>
+                    <div class="hs_searchWrapper">
+                        <label class="hs_isVisuallyHidden" for="hs_writeMessageInputExample">Search:</label>
+                        <input id="hs_writeMessageInputExample" class="_message_text" type="text" placeholder="write something...">
+                    </div>
+                </div> <!--Write Message-->
+                <div class="hs_topBarDropdown hs_dropdownSearch" data-dropdown="Search">
+                    <button class="hs_btnCtaSml hs_btnTypeSubmit _user_search">Search</button>
+                    <div class="hs_searchWrapper">
+                        <label class="hs_isVisuallyHidden" for="hs_searchInputExample">Search:</label>
+                        <input id="hs_searchInputExample" class="_user_text" type="text" placeholder="e.g. Hootsuite">
+                    </div>
+                </div><!--Search-->
+    
+                <div class="hs_topBarDropdown hs_dropdownSettings" data-dropdown="Settings">
+                    <li class="hs_dropdownMenuListItem"><a href="#">Setting 1</a></li>
+                    <li class="hs_dropdownMenuListItem"><a href="#">Setting 2</a></li>
+                    <li class="hs_dropdownMenuListItem"><a href="#">Setting 3</a></li>
+                </div>
+                <ul class="hs_topBarDropdown hs_dropdownMenuList" data-dropdown="MenuList">
+                    <li class="hs_dropdownMenuListItem"><a href="#">Drop Down Link 1</a></li>
+                    <li class="hs_dropdownMenuListItem"><a href="#">Drop Down Link 2</a></li>
+                    <li class="hs_dropdownMenuListItem"><a href="#">Drop Down Link 3</a></li>
+                </ul><!--Menu List-->
+            </div><!--hs_topBar-->
+            <div class="ss_loader center">
+            	<div class="loader">
+                	<img src="asset/loader.gif">
+                </div>
+                <span>Please wait while we setup your tab...</span>
+                <p class="tips">You can always setup more tabs of different display types, channels or topics.
+            </div><!--ss_loader-->
+            <div class="ss_footer">
+            	<a href="#">Learn more about Sonar</a>
+            </div>
+        </div><!--sonarstream-->
+    </body>
+</html>
